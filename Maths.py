@@ -1,5 +1,6 @@
 import math
 import os
+from Logo import logo
 
 class bcolors:
     HEADER = '\033[95m'
@@ -25,6 +26,8 @@ clear = lambda: os.system('clear')
 clear()
 
 print(bcolors.WARNING + "This programm must not be used to cheat during a test or exam unless with the agreement of the teacher." + bcolors.END)
+pause()
+logo()
 pause()
 
 def main():
