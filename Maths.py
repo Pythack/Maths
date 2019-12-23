@@ -63,7 +63,7 @@ def Pythagore():
     clear()
     print(bcolors.OKBLUE + "-------Pythagore menu-------" + bcolors.END)
     print(bcolors.EXTIT + "1) " + bcolors.END + "Find the length of the hypothenus")
-    print(bcolors.EXTIT + "2) " + bcolors.END + "Find the lenght of an adjacent side")
+    print(bcolors.EXTIT + "2) " + bcolors.END + "Find the length of an adjacent side")
     print(bcolors.EXTIT + "3) " + bcolors.END + "Main menu")
     print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
     print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
