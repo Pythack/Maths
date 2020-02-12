@@ -143,7 +143,7 @@ def sin():
     try:
         sin = math.sin(angle)
         clear()
-        print("The sinus of " + str(angle) + " is " + str(sin))
+        print("The sinus of " + math.degrees(str(angle)) + " is " + str(sin))
         pause()
     except Exception as e:
         clear()
