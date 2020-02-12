@@ -138,8 +138,8 @@ def Trigonometry():
 
 def sin():
     clear()
-    print(bcolors.WARNING + "Please enter the angle in radians. " + bcolors.END)
-    angle = float(input())
+    print(bcolors.WARNING + "Please enter the angle in degrees. " + bcolors.END)
+    angle = math.radians(float(input()))
     try:
         sin = math.sin(angle)
         clear()
