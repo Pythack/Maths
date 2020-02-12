@@ -153,7 +153,7 @@ def sin():
 def cos():
     clear()
     print(bcolors.WARNING + "Please enter the angle in degrees. " + bcolors.END)
-    angle = maths.radians(float(input()))
+    angle = math.radians(float(input()))
     try:
         cos = math.cos(angle)
         clear()
@@ -167,7 +167,7 @@ def cos():
 def tan():
     clear()
     print(bcolors.WARNING + "Please enter the angle in degrees. " + bcolors.END)
-    angle = maths.radians(float(input()))
+    angle = math.radians(float(input()))
     try:
         tan = math.tan(angle)
         clear()
@@ -183,7 +183,7 @@ def asin():
     print(bcolors.WARNING + "Please enter the sinus. " + bcolors.END)
     sin = float(input())
     try:
-        angle = maths.degrees(math.asin(sin))
+        angle = math.degrees(math.asin(sin))
         clear()
         print("The angle is " + str(angle))
         pause()
@@ -197,7 +197,7 @@ def acos():
     print(bcolors.WARNING + "Please enter the cosinus. " + bcolors.END)
     cos = float(input())
     try:
-        angle = maths.degrees(math.acos(cos))
+        angle = math.degrees(math.acos(cos))
         clear()
         print("The angle is " + str(angle))
         pause()
@@ -211,7 +211,7 @@ def atan():
     print(bcolors.WARNING + "Please enter the tangeante. " + bcolors.END)
     tan = float(input())
     try:
-        angle = maths.degrees(math.atan(tan))
+        angle = math.degrees(math.atan(tan))
         clear()
         print("The angle is " + str(angle))
         pause()
