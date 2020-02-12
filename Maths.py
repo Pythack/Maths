@@ -152,12 +152,12 @@ def sin():
 
 def cos():
     clear()
-    print(bcolors.WARNING + "Please enter the angle in radians. " + bcolors.END)
-    angle = float(input())
+    print(bcolors.WARNING + "Please enter the angle in degrees. " + bcolors.END)
+    angle = maths.radians(float(input()))
     try:
         cos = math.cos(angle)
         clear()
-        print("The cosinus of " + str(angle) + " is " + str(cos))
+        print("The cosinus is " + str(cos))
         pause()
     except Exception as e:
         clear()
@@ -166,12 +166,12 @@ def cos():
 
 def tan():
     clear()
-    print(bcolors.WARNING + "Please enter the angle in radians. " + bcolors.END)
-    angle = float(input())
+    print(bcolors.WARNING + "Please enter the angle in degrees. " + bcolors.END)
+    angle = maths.radians(float(input()))
     try:
         tan = math.tan(angle)
         clear()
-        print("The tangeante of " + str(angle) + " is " + str(tan))
+        print("The tangeante is " + str(tan))
         pause()
     except Exception as e:
         clear()
@@ -183,9 +183,9 @@ def asin():
     print(bcolors.WARNING + "Please enter the sinus. " + bcolors.END)
     sin = float(input())
     try:
-        angle = math.asin(sin)
+        angle = maths.degrees(math.asin(sin))
         clear()
-        print("The angle of " + str(sin) + " is " + str(angle))
+        print("The angle is " + str(angle))
         pause()
     except Exception as e:
         clear()
@@ -197,9 +197,9 @@ def acos():
     print(bcolors.WARNING + "Please enter the cosinus. " + bcolors.END)
     cos = float(input())
     try:
-        angle = math.acos(cos)
+        angle = maths.degrees(math.acos(cos))
         clear()
-        print("The angle of " + str(cos) + " is " + str(angle))
+        print("The angle is " + str(angle))
         pause()
     except Exception as e:
         clear()
@@ -211,9 +211,9 @@ def atan():
     print(bcolors.WARNING + "Please enter the tangeante. " + bcolors.END)
     tan = float(input())
     try:
-        angle = math.atan(tan)
+        angle = maths.degrees(math.atan(tan))
         clear()
-        print("The angle of " + str(tan) + " is " + str(angle))
+        print("The angle is " + str(angle))
         pause()
     except Exception as e:
         clear()
