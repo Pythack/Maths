@@ -28,28 +28,6 @@ clear()
 logo()
 pause()
 
-try :
-    while True :
-        clear()
-        print(bcolors.OKBLUE + "-------Main menu-------" + bcolors.END)
-        print(bcolors.EXTIT + "1) " + bcolors.END + "Pythagore menu")
-        print(bcolors.EXTIT + "2) " + bcolors.END + "Trigonometry menu")
-        print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
-        print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
-        command = input()
-        if command == 1:
-            Pythagore()
-        elif command == 2:
-            Trigonometry()
-        else:
-            print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
-except KeyboardInterrupt:
-        clear()
-        print("Have a pleasent day. ")
-        pause()
-        clear()
-        exit()
-
 def Pythagore():
     clear()
     print(bcolors.OKBLUE + "-------Pythagore menu-------" + bcolors.END)
@@ -219,3 +197,27 @@ def adjacent():
         print(bcolors.FAIL + "Hypothenus must be bigger than the other sides. " + bcolors.END)
         pause()
     pause()
+
+try :
+    while True :
+        clear()
+        print(bcolors.OKBLUE + "-------Main menu-------" + bcolors.END)
+        print(bcolors.EXTIT + "1) " + bcolors.END + "Pythagore menu")
+        print(bcolors.EXTIT + "2) " + bcolors.END + "Trigonometry menu")
+        print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
+        print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
+        command = input()
+        if command == 1:
+            Pythagore()
+        elif command == 2:
+            Trigonometry()
+        else:
+            print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
+except KeyboardInterrupt:
+        clear()
+        print("Have a pleasent day. ")
+        pause()
+        clear()
+        exit()
+
+
