@@ -29,7 +29,7 @@ logo()
 pause()
 
 try :
-    While True :
+    while True :
         clear()
         print(bcolors.OKBLUE + "-------Main menu-------" + bcolors.END)
         print(bcolors.EXTIT + "1) " + bcolors.END + "Pythagore menu")
