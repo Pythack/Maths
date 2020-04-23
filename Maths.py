@@ -46,7 +46,6 @@ While True :
             Trigonometry()
         else:
             print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
-            main()
     except KeyboardInterrupt:
         clear()
         print("Have a pleasent day. ")
@@ -105,7 +104,6 @@ def Trigonometry():
     else:
         print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
         Trigonometry()
-    Trigonometry()
 
 def sin():
     clear()
@@ -206,9 +204,7 @@ def hypothenus():
         clear()
         print(bcolors.FAIL + str(e) + bcolors.END)
         pause()
-        Pythagore()
     pause()
-    Pythagore()
 
 def adjacent():
     clear()
@@ -225,6 +221,4 @@ def adjacent():
         clear()
         print(bcolors.FAIL + "Hypothenus must be bigger than the other sides. " + bcolors.END)
         pause()
-        Pythagore()
     pause()
-    Pythagore()
