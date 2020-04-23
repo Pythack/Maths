@@ -37,11 +37,11 @@ def Pythagore():
     print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
     print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
     command = input()
-    if command == 1:
+    if command == "1":
         hypothenus()
-    elif command == 2:
+    elif command == "2":
         adjacent()
-    elif command == 3:
+    elif command == "3":
         main()
     else:
         print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
@@ -62,19 +62,19 @@ def Trigonometry():
     print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
     print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
     command = input()
-    if command == 1:
+    if command == "1":
         sin()
-    elif command == 2:
+    elif command == "2":
         cos()
-    elif command == 3:
+    elif command == "3":
         tan()
-    elif command == 4:
+    elif command == "4":
         asin()
-    elif command == 5:
+    elif command == "5":
         acos()
-    elif command == 6:
+    elif command == "6":
         atan()
-    elif command == 7:
+    elif command == "7":
         main()
     else:
         print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
@@ -207,9 +207,9 @@ try :
         print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
         print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
         command = input()
-        if command == 1:
+        if command == "1":
             Pythagore()
-        elif command == 2:
+        elif command == "2":
             Trigonometry()
         else:
             print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
