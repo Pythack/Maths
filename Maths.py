@@ -28,8 +28,8 @@ clear()
 logo()
 pause()
 
-While True :
-    try :
+try :
+    While True :
         clear()
         print(bcolors.OKBLUE + "-------Main menu-------" + bcolors.END)
         print(bcolors.EXTIT + "1) " + bcolors.END + "Pythagore menu")
@@ -43,7 +43,7 @@ While True :
             Trigonometry()
         else:
             print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
-    except KeyboardInterrupt:
+except KeyboardInterrupt:
         clear()
         print("Have a pleasent day. ")
         pause()
