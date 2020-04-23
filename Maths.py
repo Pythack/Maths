@@ -31,33 +31,28 @@ clear()
 logo()
 pause()
 
-def main():
-    clear()
-    print(bcolors.OKBLUE + "-------Main menu-------" + bcolors.END)
-    print(bcolors.EXTIT + "1) " + bcolors.END + "Pythagore menu")
-    print(bcolors.EXTIT + "2) " + bcolors.END + "Trigonometry menu")
-    print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
-    print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
-    try:
-        command = ""
+While True :
+    try :
+        clear()
+        print(bcolors.OKBLUE + "-------Main menu-------" + bcolors.END)
+        print(bcolors.EXTIT + "1) " + bcolors.END + "Pythagore menu")
+        print(bcolors.EXTIT + "2) " + bcolors.END + "Trigonometry menu")
+        print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
+        print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
         command = input()
-    except SyntaxError:
-        print(bcolors.FAIL + "Please enter a number. " + bcolors.END)
-        pause()
-        main()
+        if command == 1:
+            Pythagore()
+        elif command == 2:
+            Trigonometry()
+        else:
+            print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
+            main()
     except KeyboardInterrupt:
         clear()
         print("Have a pleasent day. ")
         pause()
         clear()
         exit()
-    if command == 1:
-        Pythagore()
-    elif command == 2:
-        Trigonometry()
-    else:
-        print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
-        main()
 
 def Pythagore():
     clear()
@@ -67,19 +62,7 @@ def Pythagore():
     print(bcolors.EXTIT + "3) " + bcolors.END + "Main menu")
     print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
     print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
-    try:
-        command = ""
-        command = input()
-    except SyntaxError:
-        print(bcolors.FAIL + "Please enter a number. " + bcolors.END)
-        pause()
-        main()
-    except KeyboardInterrupt:
-        clear()
-        print("Have a pleasent day. ")
-        pause()
-        clear()
-        exit()
+    command = input()
     if command == 1:
         hypothenus()
     elif command == 2:
@@ -104,19 +87,7 @@ def Trigonometry():
     print(bcolors.EXTIT + "7) " + bcolors.END + "Main menu")
     print(bcolors.OKBLUE + "-----------------------" + bcolors.END)
     print(bcolors.WARNING + "Please choose one of the numbers in the menu, or press [CTRL+C] to exit. " + bcolors.END)
-    try:
-        command = ""
-        command = input()
-    except SyntaxError:
-        print(bcolors.FAIL + "Please enter a number. " + bcolors.END)
-        pause()
-        main()
-    except KeyboardInterrupt:
-        clear()
-        print("Have a pleasent day. ")
-        pause()
-        clear()
-        exit()
+    command = input()
     if command == 1:
         sin()
     elif command == 2:
@@ -257,5 +228,3 @@ def adjacent():
         Pythagore()
     pause()
     Pythagore()
-
-main()
