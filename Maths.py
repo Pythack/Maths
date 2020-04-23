@@ -42,7 +42,7 @@ def Pythagore():
     elif command == "2":
         adjacent()
     elif command == "3":
-        main()
+        pass
     else:
         print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
         Pythagore()
@@ -75,7 +75,7 @@ def Trigonometry():
     elif command == "6":
         atan()
     elif command == "7":
-        main()
+        pass
     else:
         print(bcolors.FAIL + "Please chosse one of the numbers in the menu. " + bcolors.END)
         Trigonometry()
