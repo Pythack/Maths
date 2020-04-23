@@ -16,10 +16,7 @@ class bcolors:
 
 def pause():
     print(bcolors.WARNING + "Press [Enter] key to continue. " + bcolors.END)
-    try:
-        input()
-    except:
-        pass
+    input()
 
 clear = lambda: os.system('cls')
 
