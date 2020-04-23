@@ -21,7 +21,7 @@ def pause():
     except:
         pass
 
-clear = lambda: os.system('clear')
+clear = lambda: os.system('cls')
 
 clear()
 
